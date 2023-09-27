@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(
+    45deg,
+    #0c012b,
+    #1f0885,
+    #079afc,
+    #1f0885,
+    #0c012b
+  );
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+#content {
+  margin: 20px;
+}
+
+footer {
+  background: linear-gradient(
+    45deg,
+    #0c012b,
+    #1f0885,
+    #079afc,
+    #1f0885,
+    #0c012b
+  );
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
