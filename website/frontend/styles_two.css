@@ -73,10 +73,9 @@ form {
   font-size: 1rem;
   padding: 5px 25px;
   display: block;
-  width: 50%;
+  width: 87%;
   margin-top: 20px;
-  border: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px, black;
 }
 
 .input::placeholder {
@@ -91,4 +90,11 @@ form {
 }
 
 .todos li {
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+
+.todos li.completed {
+  text-decoration: line-through;
+  color: #b6b6b6;
 }
