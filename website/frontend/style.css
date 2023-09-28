@@ -4,21 +4,55 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+body {
+  position: relative;
+  min-height: 100vh;
+  background: #0c192c;
+  z-index: ;
+}
 
 .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bubbles {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(
-    45deg,
-    #0c012b,
-    #1f0885,
-    #079afc,
-    #1f0885,
-    #0c012b
-  );
-  background-size: 300% 300%;
-  animation: color 12s ease-in-out infinite;
-  position: absolute;
+}
+
+.bubbles span {
+  position: relative;
+  width: calc(100vw / 21);
+  height: calc(100vw / 21);
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
 }
 
 @keyframes color {
@@ -68,7 +102,7 @@
   will-change: transform, opacity;
   z-index: 0;
   margin-left: 90vh;
-  margin-top: 38vh;
+  margin-top: 2em;
 }
 
 .button-63:hover {
@@ -110,4 +144,25 @@
 .button-63:disabled {
   box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+.input {
+  font-size: 1rem;
+  padding: 5px 25px;
+  display: block;
+  width: 25%;
+  margin-top: 5em;
+  margin-left: 35em;
+}
+
+.input::placeholder {
+  color: #b5b5b5;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  color: White;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30vh;
 }
