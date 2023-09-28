@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Meine Trainigs-Website</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -10,12 +9,20 @@
     />
   </head>
   <body>
-    <header>
-      <h1>Meine Daten-Website</h1>
-    </header>
-    <div id="content">
-      <!-- Hier können später Daten angezeigt werden -->
-    </div>
-    <footer>&copy; 2023 Fischer Jonas working for MediaMarktSaturn</footer>
+    <header id="header"><h1>Meine Daten-Website</h1></header>
+    <form id="form">
+      <h2>to-do</h2>
+      <input
+        type="text"
+        id="input"
+        class="input"
+        placeholder="Enter your to-do"
+      />
+      <ul class="todos">
+        <li>This is a todo</li>
+      </ul>
+    </form>
+    <footer>&copy; 2023 Fischer Jonas</footer>
+    <script src="/website/backend/to_do.js"></script>
   </body>
 </html>
