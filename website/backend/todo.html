@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Manager</title>
-    <link rel="stylesheet" href="/website/frontend/styles_two.css" />
+    <link rel="stylesheet" href="/website/frontend/todo_styles.css" />
   </head>
   <body>
     <header>
@@ -18,15 +18,19 @@
       </nav>
     </header>
     <section class="hero">
-      <h1>Welcome to Task World</h1>
-      <p>
-        This is my simple website where I learn new code and you guys can use it
-        for being productive.<br />
-        But remember this is just the first version in which we only got a TO-DO
-        App now.<br /><br /><br />You can follow my GitHub where I will post
-        Updates in the future!<br />Stay tuned!
-      </p>
-      <a href="https://github.com/floetenheini" class="cta-button">GitHub</a>
+      <h1>Todo-App</h1>
     </section>
+    <form id="form">
+        <input
+          type="text"
+          id="input"
+          class="input"
+          placeholder="Enter your to-do"
+          autocomplete="off"
+        />
+        <ul class="todos" id="todos">
+          <li></li>
+        </ul>
+    <script src="/website/backend/to_do.js"></script>
   </body>
 </html>
