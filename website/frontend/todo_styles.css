@@ -32,6 +32,7 @@ nav {
 
 nav .logo {
   font-size: 24px;
+  color: mediumpurple;
 }
 
 nav ul {
@@ -62,7 +63,8 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 36px;
+  font-size: 60px;
+  color: mediumpurple;
 }
 
 .hero p {
@@ -72,10 +74,47 @@ nav a:hover {
 
 .cta-button {
   display: inline-block;
-  background-color: mediumpurple;
+  background-color: #00f;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 20px;
+}
+
+form {
+  max-width: 100%;
+  width: 400px;
+  color: black;
+  margin-left: 75vh;
+}
+
+.input {
+  font-size: 1rem;
+  padding: 5px 25px;
+  display: block;
+  width: 87%;
+  margin-top: 20px;
+  border: 2px, black;
+}
+
+.input::placeholder {
+  color: #b5b5b5;
+}
+
+.todos {
+  background-color: white;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.todos li {
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+
+.todos li.completed {
+  text-decoration: line-through;
+  color: #b6b6b6;
 }
