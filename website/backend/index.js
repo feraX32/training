@@ -1,33 +1,16 @@
-function onButtonClick() {
-  addEventListener(
-    "click",
-    (onButtonClick, (window.location.href = "/website/backend/second.html"))
+const users = [{ username: "Jonas", password: "Admin123" }];
+
+document.getElementById("button63").addEventListener("click", function () {
+  const usernameInput = document.getElementById("login").value;
+  const passwordInput = document.getElementById("password").value;
+  const user = users.find(
+    (user) => user.username === usernameInput && user.password === passwordInput
   );
-}
 
-const button = document.querySelector("button");
-button.addEventListener("click", onButtonClick);
-
-const input = document.getElementById("input");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const todoText = input.value;
-
-  if (todoText) {
-    const todoEl = document.createElement("li");
-    todoEl.innerText = todoText;
-
-    todoEl.addEventListener("click", () =>
-      todoEl.classList.toggle("completed")
-    );
-
-    todoEl.addEventListener("contextmenu", (e) => {
-      e.preventDefault();
-      todoEl.remove();
-    });
-
-    input.value = "";
+  if (user) {
+    window.location.href = "/website/backend/second.html";
+  } else {
+    document.getElementById("loginStatus").textContent =
+      "Anmeldung fehlgeschlagen. Überprüfen Sie Ihre Daten.";
   }
 });

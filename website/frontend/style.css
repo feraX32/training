@@ -8,7 +8,6 @@ body {
   position: relative;
   min-height: 100vh;
   background: #0c192c;
-  z-index: ;
 }
 
 .background {
@@ -67,7 +66,7 @@ body {
   }
 }
 
-.button-63 {
+.button63 {
   align-items: center;
   appearance: none;
   background-color: #fff;
@@ -101,61 +100,65 @@ body {
   width: auto;
   will-change: transform, opacity;
   z-index: 0;
-  margin-left: 90vh;
+  margin-left: 93vh;
   margin-top: 2em;
+  align-content: center;
 }
 
-.button-63:hover {
+.button63:hover {
   background: #f6f9fe;
   color: #174ea6;
 }
 
-.button-63:active {
+.button63:active {
   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
     0 8px 12px 6px rgb(60 64 67 / 15%);
   outline: none;
 }
 
-.button-63:focus {
+.button63:focus {
   outline: none;
   border: 2px solid #4285f4;
 }
 
-.button-63:not(:disabled) {
+.button63:not(:disabled) {
   box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
-.button-63:not(:disabled):hover {
+.button63:not(:disabled):hover {
   box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0,
     rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
 }
 
-.button-63:not(:disabled):focus {
+.button63:not(:disabled):focus {
   box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
-.button-63:not(:disabled):active {
+.button63:not(:disabled):active {
   box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0,
     rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
 }
 
-.button-63:disabled {
+.button63:disabled {
   box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
-.input {
+input {
   font-size: 1rem;
   padding: 5px 25px;
   display: block;
   width: 25%;
-  margin-top: 5em;
+  margin-top: 2em;
   margin-left: 35em;
+  border-radius: 35px;
+  text-align: center;
+  align-content: center;
 }
 
-.input::placeholder {
+input::placeholder {
   color: #b5b5b5;
 }
 
